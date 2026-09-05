@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F9F6F0;
+    color: #3D2E24;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Sandalwood scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CBB5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B4886B;
+}
+
+.glass-panel {
+  background: rgba(240, 232, 221, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(180, 136, 107, 0.25);
+}
+
+.glass-panel-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-panel-hover:hover {
+  background: rgba(232, 223, 208, 0.95);
+  border-color: rgba(13, 148, 136, 0.4);
+  transform: translateY(-1px);
+}
